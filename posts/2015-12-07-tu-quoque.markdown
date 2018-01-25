@@ -1,6 +1,6 @@
 ---
-title: Tu Quoque
-author: Julius
+title: Kanazawa naar Shirakawa-Go
+map-link: https://maphub.net/embed/23456
 ---
 
 Vestibulum leo turpis, dignissim quis ultrices sit amet, iaculis ac ligula.

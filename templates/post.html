@@ -1,8 +1,9 @@
 <article>
     <section class="header">
-        Posted on $date$
-        $if(author)$
-            by $author$
+        <p>$date$</p>
+
+        $if(map-link)$
+            <iframe width="100%" height="350" src="$map-link$" frameborder="0" allowfullscreen></iframe>
         $endif$
     </section>
     <section>

@@ -1,56 +1,37 @@
 body {
-    color: black;
-    font-size: 16px;
-    margin: 0px auto 0px auto;
-    width: 600px;
+    font-family: sans-serif;
+    line-height: 1.5rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    max-width: 40rem;
 }
 
-header {
-    border-bottom: 2px solid black;
-    margin-bottom: 30px;
-    padding: 12px 0px 12px 0px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: monospace;
 }
 
-nav {
+header nav {
     text-align: right;
+    width: 100%;
 }
 
-nav a {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 12px;
+header nav a {
+    color: #777;
+    margin: 0 0.6rem;
+    font-family: monospace;
+    margin-bottom: 1rem;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
-footer {
-    border-top: solid 2px black;
-    color: #555;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
+#logo {
+    font-family: monospace;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
     text-align: right;
+    width: 100%;
 }
 
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-article .header {
-    color: #555;
-    font-size: 14px;
-    font-style: italic;
-}
-
-.logo a {
+#logo a {
     color: black;
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
     text-decoration: none;
 }
