@@ -1,5 +1,6 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
+import           Data.Char
 import           Data.List
 import           Data.Monoid           ((<>))
 import           Data.Time
@@ -63,9 +64,13 @@ postContext =
                                   ("mei",       "mei"), ("juni",     "jun"),
                                   ("juli",      "jul"), ("augustus", "aug"),
                                   ("september", "sep"), ("oktober",  "okt"),
-                                  ("november",  "nov"), ("december", "dec")]}
+                                  ("november",  "nov"), ("december", "dec")],
+                        wDays  = [("zondag",    "zo"),  ("maandag",  "ma"),
+                                  ("disndag",   "di"),  ("woensdag", "wo"),
+                                  ("donderdag", "do"),  ("vrijdag",  "vr"),
+                                  ("zaterdag",  "za")]}
     "date"
-    "%e %B, %Y" <> defaultContext
+    "%A %e %B, %Y" <> defaultContext
 
 
 cleanRoute :: Routes
