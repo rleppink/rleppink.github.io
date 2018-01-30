@@ -1,9 +1,8 @@
 ---
-title: Kanazawa naar Shirakawa-Go
-map-link: https://maphub.net/rleppink/2018-05-28
+title: Callum et desum
 ---
 
-![Kasteel Kanazawa](/images/2018-05-28/kanazawa.jpg)
+![Fusce enim leo](http://via.placeholder.com/640x425)
 
 Vestibulum leo turpis, dignissim quis ultrices sit amet, iaculis ac ligula.
 Pellentesque tristique, velit eget scelerisque scelerisque, est dolor ultrices
@@ -14,7 +13,7 @@ sed est est. Curabitur lacinia fermentum lorem, elementum malesuada ipsum
 malesuada ut. Donec suscipit elit id leo vehicula mattis non sed leo. Morbi
 varius eleifend varius.
 
-![Shirakawa-Go vanaf de berg](/images/2018-05-28/shirakawa-go.jpg)
+![Fusce enim leo](http://via.placeholder.com/640x425)
 
 Aenean vel libero in magna ultricies congue in a odio. Donec faucibus rutrum
 ornare. Fusce dictum eleifend fermentum. Vestibulum vel nibh a metus porttitor
@@ -24,7 +23,7 @@ eros, sodales non vehicula et, tincidunt ut odio. Cras suscipit ultrices metus
 sit amet molestie. Fusce enim leo, vehicula sed sodales quis, adipiscing at
 ipsum.
 
-![Shirakawa-Go vanaf de berg](/images/2018-05-28/shirakawa-go.jpg)
+![Fusce enim leo](http://via.placeholder.com/640x425)
 
 Nunc tempor dignissim enim, sed tincidunt eros bibendum quis. Curabitur et dolor
 augue, id laoreet mi. Nulla cursus felis id dui vehicula vitae ornare lorem
@@ -34,13 +33,3 @@ vestibulum vitae sapien. Integer bibendum ullamcorper tristique. Nulla quis odio
 lectus, quis eleifend augue. Integer a ligula mauris. Aenean et tempus tortor.
 Quisque at tortor mi. Vivamus accumsan feugiat est a blandit. Sed vitae enim ut
 dolor semper sodales.
-
-![Shirakawa-Go vanaf de berg](/images/2018-05-28/shirakawa-go.jpg)
-
-Nulla adipiscing ultricies lobortis. Vivamus iaculis nisl vitae tellus laoreet
-vitae aliquet lacus mollis. Phasellus ut lacus urna, sed sagittis ante. Etiam
-consectetur pretium nisl sed dignissim. Pellentesque convallis, nisl eget
-commodo mollis, sem magna consequat arcu, sed pretium ipsum arcu sit amet neque.
-Aliquam erat volutpat. Morbi sed mi sed urna vestibulum placerat vitae vel
-metus. Fusce ac ante at justo pharetra vehicula. Vivamus vel tortor eget augue
-aliquet aliquet at vel odio.

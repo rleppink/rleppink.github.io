@@ -2,6 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.List
 import           Data.Monoid           ((<>))
+import           Data.Time
 import           Hakyll
 
 -- Force forward slash separators, even on Windows
@@ -21,47 +22,50 @@ main = hakyll $ do
         compile compressCssCompiler
 
 
-    match "posts/*" $ do
+    match "posts/**" $ do
         route cleanRoute
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= defaultCompiler postCtx
+            >>= loadAndApplyTemplate "templates/post.html" postContext
+            >>= defaultCompiler postContext
+
+
+    -- Make the last created post the homepage.
+    match "posts/**" $ version "latest-index" $ do
+        route $ constRoute "index.html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/post.html" postContext
+            >>= defaultCompiler postContext
 
 
     create ["archive.html"] $ do
         route cleanRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
-            let archiveCtx =
-                    listField "posts" postCtx (return posts) <>
-                    constField "title" "Archief"             <>
+            posts <- recentFirst =<< loadAll ("posts/**" .&&. hasNoVersion)
+            let archiveContext =
+                    listField "posts" postContext (return posts) <>
+                    constField "title" "Archief"                 <>
                     defaultContext
 
             makeItem ""
-                >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-                >>= defaultCompiler archiveCtx
-
-
-    match "index.html" $ do
-        route idRoute
-        compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
-            let indexCtx =
-                    listField "posts" postCtx (return posts) <>
-                    constField "title" "Home"                <>
-                    defaultContext
-
-            getResourceBody
-                >>= applyAsTemplate indexCtx
-                >>= defaultCompiler indexCtx
+                >>= loadAndApplyTemplate "templates/archive.html" archiveContext
+                >>= defaultCompiler archiveContext
 
 
     match "templates/*" $ compile templateBodyCompiler
 
 
 --------------------------------------------------------------------------------
-postCtx :: Context String
-postCtx = dateField "date" "%e %B, %Y" <> defaultContext
+postContext :: Context String
+postContext =
+  dateFieldWith
+    defaultTimeLocale { months = [("januari",   "jan"), ("februari", "feb"),
+                                  ("maart",     "mar"), ("april",    "apr"),
+                                  ("mei",       "mei"), ("juni",     "jun"),
+                                  ("juli",      "jul"), ("augustus", "aug"),
+                                  ("september", "sep"), ("oktober",  "okt"),
+                                  ("november",  "nov"), ("december", "dec")]}
+    "date"
+    "%e %B, %Y" <> defaultContext
 
 
 cleanRoute :: Routes
