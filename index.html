@@ -1,111 +1,132 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ronald Leppink - Callum et desum</title>
-        <style>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Callum et desum - Ronald Leppink</title>
+<style>
 html {
-    /* No jumping scrollbar*/
-    margin-left: calc(100vw - 100%);
+  /* No jumping scrollbar*/
+  margin-left: calc(100vw - 100%);
 }
 
 body {
-    font-family: Verdana, sans-serif;
-    font-size: 16px;
-    line-height: 1.5rem;
-    margin: 0 auto;
-    margin-top: 1rem;
-    max-width: 40rem;
-    padding: 1rem;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Verdana, sans-serif;
+header {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: right;
 }
 
-header nav {
-    text-align: right;
-    width: 100%;
+header h1 {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+header h1 a {
+  color: black;
+}
+
+header a {
+  text-decoration: none;
 }
 
 header nav a {
-    color: #777;
-    margin: 0 0.6rem;
-    margin-bottom: 1rem;
-    text-decoration: none;
+  color: #777;
 }
 
-#logo {
-    font-family: Verdana, sans-serif;
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    text-align: right;
-    width: 100%;
+header nav :first-child {
+  margin-right: 1rem;
 }
 
-#logo a {
-    color: black;
-    text-decoration: none;
+main h1 {
+  margin: 1rem auto;
+  max-width: 40rem;
+  line-height: 2rem;
 }
 
-.figure img {
-    width: 100%;
+.article-header .date {
+  color: #777;
+  max-width: 40rem;
+  margin: 1rem auto;
 }
 
-.figure .caption {
-    color: #777;
-    font-size: 0.9rem;
-    text-align: center;
+.article-content p {
+  max-width: 40rem;
+  margin: 1rem auto;
 }
 
-.date {
-    color: #777;
+.article-content img {
+  width: 100%;
 }
 
-.date:first-letter {
-    text-transform: uppercase;
+.article-content .figure .caption {
+  text-align: center;
+  color: #777;
 }
-        </style>
-    </head>
-    <body>
-        <header>
-            <div id="logo">
-                <a href="./">Ronald Leppink</a>
-            </div>
-            <nav>
-                <a href="./">home</a>
-                <a href="./archive">archief</a>
-            </nav>
-        </header>
 
-        <main role="main">
-        <h1>Callum et desum</h1>
-        <article>
-    <section class="header">
+main ul {
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+main ul li {
+  list-style-type: circle;
+  margin-bottom: 1rem;
+}
+
+main ul li a {
+  font-weight: bold;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>
+    <a href="./">Ronald Leppink</a>
+  </h1>
+  <nav>
+    <a href="./">home</a>
+    <a href="./archive/">archief</a>
+  </nav>
+</header>
+
+<main role="main">
+<h1>Callum et desum</h1>
+<article>
+    <section class="article-header">
         <p class="date">maandag  5 februari, 2018</p>
         
     </section>
-    <section>
-        <div class="figure">
-<img src="http://via.placeholder.com/640x425" alt="Fusce enim leo" />
-<p class="caption">Fusce enim leo</p>
-</div>
-<p>Vestibulum leo turpis, dignissim quis ultrices sit amet, iaculis ac ligula. Pellentesque tristique, velit eget scelerisque scelerisque, est dolor ultrices arcu, quis ullamcorper justo arcu luctus mauris. Integer congue molestie nisi id posuere. Fusce pellentesque gravida tempus. Integer viverra tortor nec eros mollis quis convallis sem laoreet. Nulla id libero ac erat varius laoreet. Proin sed est est. Curabitur lacinia fermentum lorem, elementum malesuada ipsum malesuada ut. Donec suscipit elit id leo vehicula mattis non sed leo. Morbi varius eleifend varius.</p>
+    <section class="article-content">
+        <p>Vestibulum leo turpis, dignissim quis ultrices sit amet, iaculis ac ligula. Pellentesque tristique, velit eget scelerisque scelerisque, est dolor ultrices arcu, quis ullamcorper justo arcu luctus mauris. Integer congue molestie nisi id posuere. Fusce pellentesque gravida tempus. Integer viverra tortor nec eros mollis quis convallis sem laoreet. Nulla id libero ac erat varius laoreet. Proin sed est est. Curabitur lacinia fermentum lorem, elementum malesuada ipsum malesuada ut. Donec suscipit elit id leo vehicula mattis non sed leo. Morbi varius eleifend varius.</p>
 <div class="figure">
-<img src="http://via.placeholder.com/640x425" alt="Fusce enim leo" />
+<img src="./images/placeholder.jpg" alt="Fusce enim leo" />
 <p class="caption">Fusce enim leo</p>
 </div>
 <p>Aenean vel libero in magna ultricies congue in a odio. Donec faucibus rutrum ornare. Fusce dictum eleifend fermentum. Vestibulum vel nibh a metus porttitor rhoncus. Pellentesque id quam neque, eget molestie arcu. Integer in elit vel neque viverra ultricies in eget massa. Nam ut convallis est. Pellentesque eros eros, sodales non vehicula et, tincidunt ut odio. Cras suscipit ultrices metus sit amet molestie. Fusce enim leo, vehicula sed sodales quis, adipiscing at ipsum.</p>
 <div class="figure">
-<img src="http://via.placeholder.com/640x425" alt="Fusce enim leo" />
+<img src="./images/placeholder.jpg" alt="Fusce enim leo" />
 <p class="caption">Fusce enim leo</p>
 </div>
 <p>Nunc tempor dignissim enim, sed tincidunt eros bibendum quis. Curabitur et dolor augue, id laoreet mi. Nulla cursus felis id dui vehicula vitae ornare lorem blandit. Cras eget dui nec odio volutpat pharetra. Fusce hendrerit justo justo, vel imperdiet enim. Vivamus elit risus, interdum ultrices accumsan eleifend, vestibulum vitae sapien. Integer bibendum ullamcorper tristique. Nulla quis odio lectus, quis eleifend augue. Integer a ligula mauris. Aenean et tempus tortor. Quisque at tortor mi. Vivamus accumsan feugiat est a blandit. Sed vitae enim ut dolor semper sodales.</p>
+<div class="figure">
+<img src="./images/placeholder.jpg" alt="Fusce enim leo" />
+<p class="caption">Fusce enim leo</p>
+</div>
     </section>
 </article>
 
-        </main>
-    </body>
+</main>
+</body>
 </html>
