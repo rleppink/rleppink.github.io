@@ -9,10 +9,13 @@ import           Hakyll
 -- Force forward slash separators, even on Windows
 import           System.FilePath.Posix
 
-
+import qualified GHC.IO.Encoding as E
 --------------------------------------------------------------------------------
+
 main :: IO ()
-main = hakyll $ do
+main = do
+  E.setLocaleEncoding E.utf8
+  hakyll $ do
     match "images/**" $ do
         route   idRoute
         compile copyFileCompiler
@@ -66,7 +69,7 @@ postContext =
                                   ("september", "sep"), ("oktober",  "okt"),
                                   ("november",  "nov"), ("december", "dec")],
                         wDays  = [("zondag",    "zo"),  ("maandag",  "ma"),
-                                  ("disndag",   "di"),  ("woensdag", "wo"),
+                                  ("dinsdag",   "di"),  ("woensdag", "wo"),
                                   ("donderdag", "do"),  ("vrijdag",  "vr"),
                                   ("zaterdag",  "za")]}
     "date"
