@@ -22,4 +22,4 @@ cabal.project.local~
 .ghc.environment.*
 _cache/
 _site/
-.master/
+_master/

@@ -1,12 +1,15 @@
 build:
 	stack exec s build
 
-copy:
-	cp -r _site/* _master/
+test: build
+	firefox _site/index.html
 
-publish:
-	cd _master/
-	git add .
-	git commit
-	git push
+publish: build
+	cp -r _site/* _master/
+	cd _master/; \
+	git add .; \
+	git commit; \
+ 	git push; \
 	cd
+
+.PHONY: build test publish
