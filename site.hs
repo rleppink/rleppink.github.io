@@ -39,7 +39,7 @@ main = do
             posts <- recentFirst =<< loadAll ("posts/**" .&&. hasNoVersion)
             let archiveContext =
                     listField "posts" postContext (return posts) <>
-                    constField "title" "Archief"                 <>
+                    constField "title" "Posts"                   <>
                     defaultContext
 
             makeItem ""

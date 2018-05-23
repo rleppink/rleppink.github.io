@@ -7,6 +7,8 @@ clean:
 test: build
 	firefox _site/index.html
 
+ct: clean test
+
 publish: build
 	cp -r _site/* _master/
 	cd _master/; \
