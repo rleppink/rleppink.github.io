@@ -33,16 +33,8 @@ main = do
             >>= defaultCompiler postContext
 
 
-    -- Make the last created post the homepage.
-    match "posts/**" $ version "latest-index" $ do
+    create ["index.html"] $ do
         route $ constRoute "index.html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html" postContext
-            >>= defaultCompiler postContext
-
-
-    create ["archive.html"] $ do
-        route cleanRoute
         compile $ do
             posts <- recentFirst =<< loadAll ("posts/**" .&&. hasNoVersion)
             let archiveContext =

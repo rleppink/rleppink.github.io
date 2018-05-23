@@ -1,6 +1,9 @@
 build:
 	stack exec s build
 
+clean:
+	stack exec s clean
+
 test: build
 	firefox _site/index.html
 
@@ -9,7 +12,7 @@ publish: build
 	cd _master/; \
 	git add .; \
 	git commit; \
- 	git push; \
+	git push; \
 	cd
 
-.PHONY: build test publish
+.PHONY: build clean test publish
