@@ -23,3 +23,5 @@ cabal.project.local~
 _cache/
 _site/
 _master/
+darktable_exported/
+images/
