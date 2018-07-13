@@ -5,7 +5,7 @@ clean:
 	stack exec s clean
 
 test: build
-	firefox _site/index.html
+	firefox _site/index.html &
 
 ct: clean test
 
